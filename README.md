@@ -1,4 +1,4 @@
 # ProyectoBandaAletoria
 
 Integrantes:
-* Alejandro Daza
+* Alejandro Paolo Daza Corredor
