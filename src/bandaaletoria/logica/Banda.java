@@ -5,6 +5,7 @@
  */
 package bandaaletoria.logica;
 
+import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
@@ -42,6 +43,14 @@ public class Banda {
         while (it.hasNext()) {
             Musico m = (Musico) it.next();
             m.tocarInstrumento();
+        }
+    }
+    
+    public void presentarbanda(Graphics g) {
+        Iterator it = musicos.iterator();
+        while (it.hasNext()) {
+            Musico m = (Musico) it.next();
+            m.presentarInstrumento(g);
         }
     }
 
