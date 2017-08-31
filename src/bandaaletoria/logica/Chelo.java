@@ -16,10 +16,10 @@ import javax.swing.ImageIcon;
 public class Chelo extends Instrumento{
 
     @Override
-    public void dibujar(Graphics g) {
+    public void dibujar(Graphics g, int x, int y) {
         System.out.println("dibujando el Chelo");
         Image img = new ImageIcon(this.getClass().getResource("../imagenes/chelo.png")).getImage();
-        g.drawImage(img, 0, 0, null);
+        g.drawImage(img, x, y, null);
     }
 
     @Override

@@ -16,6 +16,7 @@ public class BandaGui extends javax.swing.JFrame {
      */
     public BandaGui() {
         initComponents();
+        setBounds(0, 0, 800, 600);
     }
 
     /**

@@ -17,10 +17,10 @@ import javax.swing.ImageIcon;
 public class Guitarra extends Instrumento{
 
     @Override
-    public void dibujar(Graphics g) {
+    public void dibujar(Graphics g, int x, int y) {
         System.out.println("Dibujando la Guitarra");
         Image img = new ImageIcon(this.getClass().getResource("../imagenes/guitarra.png")).getImage();
-        g.drawImage(img, 0, 0, null);
+        g.drawImage(img, x, y, null);
     }
 
     @Override

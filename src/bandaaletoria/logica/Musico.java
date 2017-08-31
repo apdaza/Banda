@@ -26,8 +26,8 @@ public class Musico {
         this.instrumento.tocar();
     }
     
-    public void presentarInstrumento(Graphics g){
-        this.instrumento.dibujar(g);
+    public void presentarInstrumento(Graphics g, int x, int y){
+        this.instrumento.dibujar(g, x, y);
     }
     
 }

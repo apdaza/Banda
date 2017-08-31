@@ -48,9 +48,12 @@ public class Banda {
     
     public void presentarbanda(Graphics g) {
         Iterator it = musicos.iterator();
+        int x = 0;
+        int y = 0;
         while (it.hasNext()) {
             Musico m = (Musico) it.next();
-            m.presentarInstrumento(g);
+            m.presentarInstrumento(g, x, y);
+            x += 128;
         }
     }
 
